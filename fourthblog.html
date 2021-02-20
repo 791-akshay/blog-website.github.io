@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gidugu&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gidugu&family=Nova+Slim&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>How to make Calculator using C programming</title>
+  </head>
+  <body>
+      <!--nav-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark my_nav fixed-top">
+        <div class="container">
+              <a class="navbar-brand" href="index.html"><b>' Computer Coding Languages '</b></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                      </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                      <div class="input-group">
+                          <input type="search" class="form-control form-control-sm" placeholder="search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-success btn-sm" type="submit" id="button-addon2"><i class="fa fa-search"></i></button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </nav>
+
+        <!--banner-->
+        <header class="main-header" id="home">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-8 col-md-8">
+                        <div class="header">
+                            <h1>Computer Coding Languages</h1>
+                            <p>In ' Computer Coding Languages Tutorial's ' we can learn about the programming languages like C, C++, HTML, CSS, & much more programming languages.
+                                Also we can create a project by using the such programming languages...
+                            </p>
+                        </div>
+                        <div class="subscribe-holder">
+                            <a href="#" data-toggle="modal" data-target="#subscribe-modal" class="btn btn-info">Subscribe For Updates</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--banner-->
+
+        <!--body content-->
+        <section class="default-body-content" style="color: rgb(228, 227, 227);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8">
+                        <img src="img/calculator.png" class="img-fluid rounded mb-3" alt="Something">
+                        <div class="content">
+                            <h1 style="color: rgb(255, 255, 255);">How to make Calculator using C program</h1><br>
+                            <p>Let’s start the article in this article we have to learn how to make a simple calculator program in c programming languages.</p>
+                            <p>Let’s start the c programs with explanation</p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        &nbsp; # include < stdio.h > <br>
+                                            &nbsp;&nbsp;&nbsp;void main() <br>
+                                            &nbsp; { <br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int x, a, b, c; <br>
+                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(" \n Enter values of a : "); <br>
+                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scanf("%d", &a); <br>
+                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(" \n Enter values of b : "); <br>
+                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scanf("%d", &b); <br>
+                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("\n 1.addition, 2.subtraction, 3.multiplication, 4.division"); <br>
+                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf("\n Enter your choice : "); <br>
+                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scanf(“%d ”, &x); <br>
+                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;switch(x) <br>
+                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{ <br>
+                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case 1: c= a+b; <br>
+                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("\n Addition=%d", c); <br>
+                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break; <br> <br>
+                                            
+                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case 2: c=a-b; <br>
+                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("\n Subtraction = %d", c); <br>
+                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break; <br> <br>
+                                            
+                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case 3: c=a*b; <br>
+                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("\n Multiplication = %d", c); <br>
+                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break; <br> <br>
+                                            
+                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; case 4: c=a/b; <br>
+                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf("\n division = %d", c); <br>
+                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break; <br> <br>
+                                            
+                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; default: printf("\n unknown operation"); <br>
+                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break; <br>
+                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                            &nbsp; } <br>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Let's see the step by step solution how to create a calculator</p>
+                                </li>
+                                <li><h6>Step 1 :</h6>
+                                <p>First step is including the library function in c programming like #include< stdio.h ></p>
+                                </li>
+                                <li><h6>Step 2 :</h6>
+                                <p>Second step is start the main function for this program.</p><br><br>
+                                </li>
+                                <li><h6>Step 3 :</h6>
+                                <p>In next step for making the calculator we require some variable.</p>
+                                <p>And declare this variable. For declaring this variable the variable which type of value like variable value is integer value or character value or floating value.</p>
+                                <p>For making the calculator we require the integer value or floating value so, we can take any one of them and then declare this variable in this type int x,a,b,c.</p>
+                                <p>We required the 4 variable for the making the calculator we require the x variable if you can take another variable also then I can take “x” variable working of this 
+                                    variable for this c programming is to choose the choice from given choices form user. Then declare the another variable I declare the variable like “a”, ”b” working 
+                                    of this variable in this program is accept the integer value form the user to perform the operation like addition, subtraction, division, multiplication like this. 
+                                    And the another variable is require for this program to store the value and display this value on the console screen.</p>
+                                    <p>So, declaring  the variable like this int x, a, b, c;</p>
+                                </li>
+                                <li><h6>Step 4 :</h6>
+                                    <p>Next step is accept the two value form the user in the form of integer value for perform the operation on it.</p>
+                                </li>
+                                <li><h6>Step 5 :</h6>
+                                    <p>And print the message on the console screen which operation we will to perform on the this operator.</p>
+                                </li>
+                                <li><h6>Step 6 :</h6>
+                                    <p>And give the choice form user which operation it can perform on this program.</p>
+                                </li>
+                                <li><h6>Step 7 :</h6>
+                                    <p> Next step is switch(x) this statement is used for the which choice is used user in the program.
+                                        When we can used 1st choice then it choose the 1st operation which we can declare in the 1st position. When we can choose 2nd choice then it choose 2nd operation
+                                        which we can declare in the 2nd position and so on.</p>
+                                    <p> Supposed we choose the 1st option then it can perform the addition on the operator which can accept form the user. And it display the value which can be perform on the operators.
+                                        Supposed we can choose the wrong choice then print the message your choice is wrong.</p>
+                                </li>
+                            </ul><br>
+                        
+
+                            <p>Thank you for reading this post. I thought the concept is clear how to make a calculator using C language code.
+                                If this article helpful to you then please share it on social media and do you want to read these type of technology related blog then follow to the <a href="https://computer-coding-languages.blogspot.com/2020/04/calculator-program-in-c-using-switch-case.html" style="text-decoration: underline;"  target="_blank">read more..</a></p>
+                        </div>
+
+                        
+                        <nav aria-label="Page navigation example ">
+                            <ul class="pagination">
+                              <li class="page-item"><a class="page-link" href="thirdblog.html">Previous</a></li>
+                              <li class="page-item"><a class="page-link" href="thirdblog.html">3</a></li>
+                              <li class="page-item active"><a class="page-link" href="fourthblog.html">4</a></li>
+                              <li class="page-item"><a class="page-link" href="fifthblog.html">5</a></li>
+                              <li class="page-item"><a class="page-link" href="fifthblog.html">Next</a></li>
+                            </ul>
+                          </nav>
+
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <aside class="card text-white bg-dark mb-3">
+                            <div class="card-body">
+                                <h4 class="card-title">Subscribe for Technology</h4>
+                                <p class="card-text">Get latest updates</p>
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control form-control-sm" placeholder="Email Id" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="submit" class="btn btn-sm btn-block btn-warning" value="Subscribe Now">
+                                    </div>
+                                </form>
+                            </div>
+                        </aside>
+
+
+                        <ul class="list-group mb-3 ">
+                            <li class="list-group-item active bg-dark"><a href="firstblog.html" style="color: aliceblue;">Recent Post</a></li>
+                            <li class="list-group-item bg-dark"><a href="thirdblog.html" style="color: aliceblue;">Next Post</a></li>
+                        </ul>
+                        <div class="card bg-dark">
+                            <div class="card-body">
+                                <h6 class="card-title">Your Comment</h6>
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control form-control-sm" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control form-control-sm" placeholder="Your Email Id" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control form-control-sm" rows="6" placeholder="Your Comment" required></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="submit" class="btn btn-sm btn-block btn-primary" value="post comment">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--body content-->
+
+        <div class="modal fade" id="subscribe-modal" tabindex="-1" aria-labelledby="subscribe-modal" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Subscribe for Technology</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-sm" placeholder="First Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-sm" placeholder="Last Name">
+                        </div>
+                          <div class="mb-3">
+                              <input type="text" class="form-control form-control-sm" placeholder="Email Id">
+                          </div>
+                          <div class="mb-3">
+                              <input type="submit" class="btn btn-success btn-sm btn-block" value="Subscribe Now">
+                          </div>
+                      </form>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <!--footer-->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copy text-center">
+                            <p><small>Copyright &copy; 2020. All Rights Reserved</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer-->
+        
+        
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
